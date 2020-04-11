@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-typescript-todo",
+  "name": "nuxt-todo-app",
   "version": "1.0.0",
-  "description": "Todo App with Typescript",
+  "description": "Todo App",
   "author": "pengguna21",
   "private": true,
   "scripts": {
