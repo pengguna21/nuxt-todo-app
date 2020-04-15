@@ -23,11 +23,13 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/main.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    // { src: '~/plugins/bootstrap-vue', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -38,7 +40,15 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'bootstrap-vue/nuxt'
   ],
+  /*
+   * Bootstrap vue
+   */
+  bootstrapVue: {
+    bootstrapCSS: false,
+    bootstrapVueCSS: false
+  },
   /*
   ** Build configuration
   */
