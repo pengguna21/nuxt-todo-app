@@ -1,0 +1,19 @@
+// Custom Bootstrap variable overrides go first
+@import './variables';
+
+// Then include the following
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
+
+// And define any of your custom or additional CSS/SCSS here,
+// or via an @import
+body {
+  font-family: $font-family;
+}
+
+@import './utilities';
+
+@import './components/card';
+@import './components/navbar';
+@import './components/section';
+@import './components/list-group';

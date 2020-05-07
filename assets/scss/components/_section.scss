@@ -1,0 +1,29 @@
+.main-body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.wrapper {
+
+  &.board {
+    height: calc(100vh - #{$navbar-height});
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+
+    .board-main {
+      @extend .pb-2;
+      display: flex;
+      overflow-x: auto;
+    
+      > * {
+        flex: 0 0 auto; // 'rigid' card
+        margin-left: $gap;
+      }
+      &::after {
+        content: '';
+        flex: 0 0 $gap;
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+// navbar app
+.navbar-app {
+  @extend .justify-content-center,
+    .navbar-dark,
+    .bg-primary,
+    .py-0;
+  height: $navbar-height;
+
+  .navbar-nav {
+    @extend .flex-row;
+
+    .nav-item {
+      @extend .mx-3;
+
+      .nav-link {
+        @extend .py-0;
+        font-size: $font-body-size;
+
+        .title {
+          @extend .align-self-center;
+          line-height: 1em;
+        }
+
+        .icon {
+          @extend .mr-2;
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      &:not(.active) {
+        .nav-link {
+          color: rgba($color: $white, $alpha: .7);
+        }
+      }
+    }
+  }
+}
+
+// navbar board
+.navbar-board {
+  @extend .navbar-light,
+    .bg-default,
+    .border-bottom,
+    .py-0;
+  height: $navbar-height;
+
+  .navbar-brand {
+    @extend .d-flex,
+      .align-items-center;
+
+    .title {
+      @extend .mb-0;
+      font-size: $font-body-size;
+    }
+
+    .badge {
+      @extend .ml-3,
+        .py-1, .px-3;
+    }
+  }
+
+  .navbar-nav {
+    @extend .flex-row;
+
+    .nav-item {
+
+      .new-member {
+        @extend .d-flex,
+          .text-primary;
+        line-height: 1em;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        i {
+          @extend .mr-1;
+        }
+      }
+    }
+  }
+}
+
+// navbar-helper
+.navbar-helper {
+  @extend .navbar-light,
+    .py-3;
+  background-color: $body-bg;
+
+  .input-search {
+    @extend .w-100, .w-md-25,
+      .mb-2, .mb-md-0;
+    font-family: $font-family, FontAwesome;
+  }
+
+  .navbar-nav {
+    @extend .w-100, .w-md-auto,
+      .flex-row,
+      .align-items-center;
+
+    .nav-item {
+      @extend .w-100,
+        .mx-2;
+
+      button {
+        @extend .w-100,
+          .d-flex,
+          .justify-content-center,
+          .text-truncate,
+          .px-3;
+
+        i {
+          @extend .align-self-center,
+            .mr-2;
+        }
+      }
+
+      &:first-child {
+        @extend .ml-0;
+      }
+
+      &:last-child {
+        @extend .mr-0;
+      }
+    }
+  }
+}

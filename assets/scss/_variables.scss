@@ -1,5 +1,42 @@
+/* Some Sass variables */
+
+// color
+$black: #111111;
+$white: #ffffff;
+$primary: #004cff;
+$default: #f8f9fa;
+$gray: #dee2e6;
+$gray-dark: #868e96;
+
 $theme-colors: (
-  "primary": #505AAD
+  'primary': $primary,
+  'default': $default,
+  'gray': $gray
 );
 
-$body-bg: #D3D5DD;
+$body-bg: $white;
+$body-color: #212529;
+
+// utilities
+$font-family: 'Baloo Paaji 2';
+$font-body-size: 16px;
+
+$gap: 16px;
+
+$border-radius: .5rem;
+$border-color: $gray;
+
+// input
+$input-bg: $default;
+
+/* -----> custom <-----  */
+
+$navbar-height: 50px;
+
+// card todo
+$card-todo-width: 300px;
+$card-todo-header-height: 40px;
+$card-todo-footer-height: 40px;
+$card-background-color: $white;
+
+/* -----> custom <-----  */

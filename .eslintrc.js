@@ -19,7 +19,7 @@ module.exports = {
   ],
   // tambahkan aturan anda disini
   rules: {
-    'no-console': 1,
+    'no-console': 2,
     'no-unused-vars': 1
   }
 }

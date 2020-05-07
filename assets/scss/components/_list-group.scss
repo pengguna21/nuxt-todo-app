@@ -1,0 +1,72 @@
+// list todo
+.list-todo {
+  width: $card-todo-width;
+
+  .list-content {
+    height: 100%;
+
+    .list-header {
+      @extend .d-flex,
+        .align-items-center,
+        .justify-content-between;
+      height: $card-todo-header-height;
+      border-radius: $border-radius $border-radius 0 0;
+
+      .list-title {
+        @extend .d-flex,
+          .align-items-center;
+        overflow: hidden;
+
+        .title {
+          @extend .mb-0, .mr-2,
+            .text-capitalize, .text-truncate;
+          font-size: 18px;
+        }
+
+        button {
+          @extend .btn-rounded-list,
+            .mr-3;
+          color: $body-color;
+        }
+      }
+
+      .btn-toolbar {
+        @extend .align-items-center;
+        flex-wrap: unset;
+
+        button {
+          @extend .btn-rounded-list;
+        }
+
+        > * {
+          @extend .mx-1;
+
+          &:first-child {
+            @extend .ml-0;
+          }
+
+          &:last-child {
+            @extend .mr-0;
+          }
+        }
+      }
+    }
+  
+    .list-footer {
+      @extend .d-flex, .align-items-center;
+      height: $card-todo-footer-height;
+      border-radius: 0 0 $border-radius $border-radius;
+    }
+  
+    .list-body {
+      margin: 0;
+      max-height: calc(100% - #{$card-todo-header-height} - #{$card-todo-footer-height});
+      overflow-y: auto;
+    }
+
+    > * {
+      padding: 0 1rem;
+      background-color: $default;
+    }
+  }
+}
